@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en"  ng-app="apps">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<title>yanchu</title>
+	<link href="https://cdn.bootcss.com/ionic/1.3.2/css/ionic.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="lib/swiper-3.3.1.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.js"></script>
+    
+    
+</head>
+<body ng-controller="listone">
+	<ion-nav-view>
+	<ion-content>	
+	<div id="yan">
+		<!--header-->
+		<!--<ion-scroll zooming="true" direction="y" scrollbar-y="false" style="width: 100vw; height: 100vh">-->
+		<div>		
+			<div class="list listHeader">
+				<div class="row">
+				  <div class="col col-20">
+				  	<a href="">杭州<i class="icon ion-chevron-down"></i></a>
+				  </div>
+				  <div class="col col-67">演出</div>
+				  <div class="col col-13">
+				  	<a href=""><i class="icon ion-search"></i></a>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<!--lubo-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/yanchubanner5.jpg"/>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/yanchubanner1.jpg"/>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/yanchubanner4.jpg"/>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/yanchubanner2.jpg"/>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/yanchubanner3.jpg"/>
+				</div>
+				<div class="swiper-slide"></div>				
+			</div>			
+		</div>
+		<!--liebiao-->
+		<div class="Rows">
+			<div class="row">
+			  <div class="col col-20">
+			  	<img src="img/yanchu1.jpg"/>
+			  	<p href="">演唱会</p>
+			  </div>
+			  <div class="col col-20">
+			  	<img src="img/yanchu2.jpg"/>
+			  	<p href="">体育赛事</p>
+			  </div>
+			  <div class="col col-20">
+			  	<img src="img/yanchu3.jpg"/>
+			  	<p href="">戏曲艺术</p>
+			  </div>
+			  <div class="col col-20">
+			  	<img src="img/yanchu4.jpg"/>
+			  	<p href="">话剧歌曲</p>
+			  </div>
+			  <div class="col col-20">
+			  	<img src="img/yanchu5.jpg"/>
+			  	<p href="">舞蹈芭蕾</p>
+			  </div>		  
+			</div>
+			<div class="row">
+			  <div class="col col-20">
+			  	<img src="img/yanchu6.jpg"/>
+			  	<p href="">音乐会</p>
+			  </div>
+			  <div class="col col-20">
+			  	<img src="img/yanchu7.jpg"/>
+			  	<p href="">亲子演出</p>
+			  </div>
+			  <div class="col col-20">
+			  	<img src="img/yanchu8.jpg"/>
+			  	<p href="">休闲展览</p>
+			  </div>
+			  <div class="col col-20">
+			  	<img src="img/yanchu9.jpg"/>
+			  	<p href="">优惠专区</p>
+			  </div>
+			  <div class="col col-20">
+			  	<img src="img/yanchu10.jpg"/>
+			  	<p href="">更多精彩</p>
+			  </div>
+			</div>
+		</div>
+		<!--main-->
+		
+		<div class="main">			
+			<div class="list4">
+			    <a class="item item-thumbnail-left" href="#">
+			      <img src="img/yanchu11.jpg">
+			      <h3>白老汇经典原版经典剧《修女也.dsafasdfsafasdfasdfsafsadfasd</h3>
+			      <p><span class="state">2017-09-20</span>至<span class="end">2017-09-24</span></p>
+			      <p>杭州大剧院</p>
+			      <p class="lastp"><span class="move">171-1026元</span>&nbsp;<span class="stop">售票中</span></p>
+			    </a>
+			    <a class="item item-thumbnail-left" href="#">
+			      <img src="img/yanchu11.jpg">
+			      <h3>白老汇经典原版经典剧《修女也.dsafasdfsafasdfasdfsafsadfasd</h3>
+			      <p><span class="state">2017-09-20</span>至<span class="end">2017-09-24</span></p>
+			      <p>杭州大剧院</p>
+			      <p class="lastp"><span class="move">171-1026元</span>&nbsp;<span class="stop">售票中</span></p>
+			    </a>
+			    <a class="item item-thumbnail-left" href="#">
+			      <img src="img/yanchu11.jpg">
+			      <h3>白老汇经典原版经典剧《修女也.dsafasdfsafasdfasdfsafsadfasd</h3>
+			      <p><span class="state">2017-09-20</span>至<span class="end">2017-09-24</span></p>
+			      <p>杭州大剧院</p>
+			      <p class="lastp"><span class="move">171-1026元</span>&nbsp;<span class="stop">售票中</span></p>
+			    </a>
+			   
+			</div>
+		</div>		
+	<!--</ion-scroll>-->
+	</div>
+	<ion-infinite-scroll on-infinite="loadMore()" distance="1%"> </ion-infinite-scroll> 
+	</ion-content>
+	</ion-nav-view>
+	
+	<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
